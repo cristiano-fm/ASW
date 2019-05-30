@@ -1,0 +1,162 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 60vh;
+  width: 40vw;
+  margin-top: 19vh;
+}
+
+.box h2 {
+  margin-top: -0.75em;
+  margin-bottom: 0;
+  color: #434157;
+  font-size: 4vw;
+}
+
+.box h4 {
+  margin: 4vh auto 0 auto;
+  color: #434157;
+  font-size: 30px;
+}
+
+.box .step-info {
+  margin: 0px;
+}
+
+.box form {
+  margin: 4% auto;
+}
+
+.box form p {
+  margin: 0.5% auto;
+  font-size: 20px;
+}
+
+.box form input, .box form select {
+  border: 1px solid #b3b3b3;
+  border-radius: 100px;
+  height: 35px;
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+  color: #5a3f61;
+}
+
+.box form div {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: -20px 0 15px 0;
+  padding: 0px;
+}
+
+.box form div div {
+  margin: 0px;
+  padding: 0px;
+  width: 30%;
+}
+
+.box form div div p {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.box form div div input, .box form div div select {
+  width: 94.5%;
+}
+
+.box #bottom-info {
+  position: absolute;
+  bottom: 3vh;
+  width: 100%;
+}
+
+.box #bottom-info a {
+  text-decoration: underline;
+}
+
+.box div {
+  position: absolute;
+  bottom: -1.5vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box div .back-bt {
+  background-color: white;
+  padding: 4px 48px;
+}
+
+input:focus {
+  outline-style: none;
+}
+
+img {
+  display: block;
+  margin: 3% auto 0 auto;
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+}
+
+#step {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+#country-info {
+  display: none;
+}
+
+#country {
+  margin-top: 8px;
+}
+
+select[name=sex] {
+  width: 98% !important;
+  height: 35px !important;
+  text-align: center !important;
+}
+
+.squish {
+  margin: 0px !important;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  color: #434157;
+  font-weight: 700;
+  border: 3px solid #434157;
+  border-radius: 100px;
+  padding: 3px 20px;
+  margin: 6px;
+  font-size: 1.1em;
+  background-color: white;
+}
+
+.inputfile + label {
+  cursor: pointer;
+}
+
+.wrong-input {
+  color: #8e3c3c !important;
+}
+/*# sourceMappingURL=register.css.map */

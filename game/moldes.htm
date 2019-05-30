@@ -1,0 +1,72 @@
+<!------------------------CARD--------------------------->
+<section class="card">
+    <section class="card-inner">
+        <section class="card-front" style="background-color: #CCF0BD;">
+            <div>
+                <h3>Tiny house</h3> 
+                <p>2</p> 
+            </div>
+            <img src="../media/card_pics/tiny_house.png">
+            <p>it´s really tiny. your cims will speak 
+                broke and eat last week's bread.</p>
+            <img class="card-icon" src="../media/population.png">
+            <p class="card-power">+5</p>
+        </section>
+        <section class="card-back" style="background-color: #CCF0BD;">
+            <div>
+                <h3>Tiny house</h3> 
+                <p>2</p> 
+            </div>
+            <span class="trade-bt">TRADE</span>
+            <span class="delete-bt"> DELETE</span> 
+            <p class="disclamer">Actions are applied to only one of 
+                the repeated cards at the time</p>
+        </section>
+    </section>
+</section>
+
+<!------------------LOCKED-CARD-------------------------->
+<section class="locked-card">
+    <section>
+        <h3>Super sky-scraper</h3>
+        <h1>?</h1>
+    </section>     
+</section>
+
+<!------------------COLLECTION--------------------------->
+<section class="coll">
+    <div class="back-card"></div>
+    <div class="middle-card"></div>
+    <div class="front-card" style="background-color: #CCF0BD;">
+        <h3>HABITATION</h3> 
+        <img src="../media/card_pics/habitation.png">
+        <p>Provide homes for your cims to live in. 
+        Rarer homes provide more space for more cims.</p>
+    </div>
+    <div class="collectors">
+        <img src="../media/profile_pics/choach.jpg">
+        <img src="../media/profile_pics/malfas.jpg">
+        <img src="../media/profile_pics/guldan.jpg">
+        <p>+5 people have this collection</p>
+    </div>
+</section>
+
+
+<?php
+session_start();
+include('../openconn.php');
+
+$queryCard = "SELECT * FROM `card` WHERE `name`='".$_GET['card']."'";
+$resultCard = mysqli_query($conn, $queryCard);
+$card = mysqli_fetch_assoc($resultCard);
+
+if($_GET['action'] == "ADD"){
+    if ( intval($_SESSION['money']) >= 0 ){
+        $_SESSION['money'] = $_SESSION['money'] - $card['price'];
+    };
+} else{
+    $_SESSION['money'] = $_SESSION['money'] + $card['price'];
+}
+
+echo $_SESSION['money'];
+?>

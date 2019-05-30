@@ -1,0 +1,85 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#login {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 60vh;
+  width: 40vw;
+  margin-top: 19vh;
+}
+
+#login h2 {
+  margin-top: -0.75em;
+  margin-bottom: 0;
+  color: #434157;
+  font-size: 4vw;
+}
+
+#login h3 {
+  margin: 2% auto -2% auto;
+  color: #5a3f61;
+  font-size: 2.2vw;
+}
+
+#login h4 {
+  margin: 6% auto;
+  color: #434157;
+  font-size: 30px;
+}
+
+#login form p {
+  margin: 3% auto 0.5% auto;
+  font-size: 20px;
+}
+
+#login form input {
+  border: 1px solid #b3b3b3;
+  border-radius: 100px;
+  height: 35px;
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+  color: #5a3f61;
+}
+
+#login #error-msg {
+  color: #8e3a3a;
+}
+
+#login #register {
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+}
+
+#login #register a {
+  text-decoration: underline;
+}
+
+#login div {
+  position: absolute;
+  bottom: -1.5vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#login div #back-bt {
+  background-color: white;
+  padding: 4px 48px;
+}
+
+input:focus {
+  outline-style: none;
+}
+
+img {
+  height: 35%;
+  margin-top: 10%;
+}
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,308 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+header {
+  background-color: white;
+  height: 60px;
+  z-index: 10;
+}
+
+header #title {
+  position: absolute;
+  left: 1%;
+  color: #434157;
+  font-size: 43px;
+  margin: 0;
+}
+
+header #title strong {
+  font-size: 25px;
+}
+
+header a {
+  position: absolute;
+  right: 5px;
+  top: 16px;
+}
+
+#return {
+  position: absolute;
+  top: 120px;
+  margin-left: -90px;
+}
+
+#return strong {
+  font-size: 27px;
+}
+
+#search-box {
+  position: absolute;
+  top: 120px;
+  margin-left: 410px;
+  background-color: #434157;
+  border-radius: 300px;
+  height: 40px;
+  width: 40px;
+}
+
+#search-box #close {
+  display: none;
+  float: left;
+  padding: 12.5px 8px 12.5px 15px;
+  height: 15px;
+}
+
+#search-box form {
+  margin: 0;
+  padding: 0;
+}
+
+#search-box form select {
+  display: none;
+  float: left;
+  margin: 5px;
+  border: 0px;
+  border-radius: 100px;
+  height: 30px;
+  width: 130px;
+  font-size: 20px;
+  color: #5a3f61;
+}
+
+#search-box form input {
+  display: none;
+  float: left;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 100px;
+  height: 20px;
+  width: 300px;
+  font-size: 20px;
+  color: #5a3f61;
+}
+
+#search-box #search {
+  float: right;
+  padding: 10px;
+  height: 20px;
+}
+
+#admin-users {
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 65vw;
+  margin-top: 170px;
+  margin-bottom: 170px;
+}
+
+#admin-users h4 {
+  text-align: left;
+  margin: -30px 0 0 30px;
+  color: #434157;
+  font-size: 40px;
+}
+
+#admin-users .user {
+  display: block;
+  height: 80px;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+#admin-users .user img {
+  position: absolute;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  margin: 5px 0 0 20px;
+}
+
+#admin-users .user p {
+  display: block;
+  width: 70%;
+  margin: 0px 0px 0px 110px;
+  line-height: 80px;
+}
+
+#admin-users .user div {
+  float: right;
+  margin-top: -80px;
+}
+
+#admin-users .user div div {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 70px;
+  margin: 10px 10px 10px 0;
+}
+
+#admin-users .user div div img {
+  position: relative;
+  display: block;
+  margin: 10px auto 0 auto;
+  height: 40px;
+  width: 40px;
+}
+
+.view {
+  background-color: #434157;
+}
+
+.delete {
+  background-color: #AF4258;
+}
+
+.darker {
+  background-color: rgba(225, 225, 225, 0.5);
+}
+
+.admin-forms {
+  margin-top: 65px;
+  height: 400px;
+}
+
+.admin-forms h5 {
+  color: #434157;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.admin-forms input, .admin-forms select {
+  border: 1px solid #b3b3b3;
+  border-radius: 100px;
+  height: 35px;
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+  color: #5a3f61;
+}
+
+.admin-forms input[type=color] {
+  border: 0px solid white;
+  border-radius: 0px;
+  width: 10%;
+}
+
+.admin-forms input[type=file] {
+  border: 0px solid white;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.admin-forms .show-input h6 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#down-bt {
+  position: relative;
+  top: 12px;
+}
+
+#create-coll-form {
+  height: 400px;
+}
+
+#add-card-form {
+  height: 900px;
+}
+
+#admin-user-profile {
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 65vw;
+  margin-top: 170px;
+  margin-bottom: 170px;
+}
+
+#admin-user-profile h4 {
+  text-align: left;
+  margin: -30px 0 0 30px;
+  color: #434157;
+  font-size: 40px;
+}
+
+#admin-user-profile h5 {
+  color: #434157;
+  font-size: 30px;
+  margin: 40px auto 0 auto;
+}
+
+#admin-user-profile h6 {
+  color: #434157;
+  font-size: 20px;
+  margin: 20px auto 0 auto;
+}
+
+#admin-user-profile p {
+  font-size: 17px;
+  margin: 3px auto;
+}
+
+#admin-user-profile img {
+  position: relative;
+  display: block;
+  margin: 10px auto 0 auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+#admin-user-profile #grid-board {
+  margin: 0 auto;
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#admin-user-profile #grid-pop {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+#admin-user-profile #grid-hap {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+#admin-user-profile #grid-mon {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.view {
+  cursor: pointer;
+}
+/*# sourceMappingURL=adminUsers.css.map */

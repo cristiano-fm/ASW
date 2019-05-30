@@ -1,0 +1,93 @@
+$color0: #b3b3b3;
+$color1: rgba(255, 255, 255, 0.9);
+$color2: #434157;
+$color3: rgb(90, 63, 97);
+$color4: #7939D9;
+
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#login{
+    position: relative;
+    display: inline-block;
+    background-color: $color1;
+    height: 60vh;
+    width: 40vw;
+    margin-top: 19vh;
+
+    h2{
+        margin-top: -0.75em;
+        margin-bottom: 0;
+        color: $color2;
+        font-size: 4vw;
+    }
+
+    h3{
+        margin: 2% auto -2% auto;
+        color: $color3;
+        font-size: 2.2vw;
+    }
+
+    h4{
+        margin: 6% auto;
+        color: $color2;
+        font-size: 30px;
+    }
+
+    form{
+
+        p{
+            margin: 3% auto 0.5% auto;
+            font-size: 20px;
+        }
+
+        input{
+            border: 1px solid $color0;
+            border-radius: 100px;
+            height: 35px;
+            width: 60%;
+            font-size: 20px;
+            text-align: center;
+            color: $color3;
+        }
+    }
+
+    #error-msg{
+        color: rgb(142, 58, 58);
+    }
+
+    #register{
+        position: absolute;
+        bottom: 5vh;
+        width: 100%;
+
+        a{
+            text-decoration: underline;
+        }
+    }
+
+    div{
+        position: absolute;
+        bottom: -1.5vh;
+        width: 100%;
+        margin: 0 auto;
+
+        #back-bt{
+            background-color: white;
+            padding: 4px 48px;
+        }
+    }
+}
+
+input:focus {
+    outline-style: none;
+}
+
+img{
+    height: 35%;
+    margin-top: 10%;
+}

@@ -1,0 +1,97 @@
+$color0: #b3b3b3;
+$color1: rgba(255, 255, 255, 0.9);
+$color2: #434157;
+$color3: rgb(90, 63, 97);
+$color4: #7939D9;
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+header{
+    background-color: white;
+    height: 60px;
+    z-index: 10;
+
+    #title{
+        position: absolute;
+        left: 1%;
+        color: $color2;
+        font-size: 43px;
+        margin: 0;
+
+        strong{
+            font-size: 25px;
+        }
+    }
+
+    a{
+        position: absolute;
+        right: 5px;
+        top: 16px;
+    }
+}
+
+#admin-panel{
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+    background-color: $color1;
+    height: 60vh;
+    width: 65vw;
+    margin-top: 14vh;
+
+    h4{
+        text-align: left;
+        margin: -30px 0 0 30px;
+        color: $color2;
+        font-size: 40px;
+    }
+
+    h5{
+        font-size: 1.7em;
+        margin: 1vh auto 4vh auto;
+    }
+
+}
+
+#grid{
+    display: grid;
+    grid-template-rows: 100%; 
+    grid-template-columns: 1fr, 1fr;
+    margin: 12%;
+}
+
+#administration{
+    grid-column: 1;
+    grid-row: 1;
+
+    a{
+        display: block;
+        margin: 10px auto;
+    }
+
+    span{
+        display: block;
+        margin: 10px;
+    }
+
+}
+
+#management{
+    grid-column: 2;
+    grid-row: 1;
+
+    a{
+        display: block;
+        margin: 10px auto;
+    }
+
+    span{
+        display: block;
+        margin: 10px;
+    }
+}
